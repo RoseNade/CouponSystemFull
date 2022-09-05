@@ -19,7 +19,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/company")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "", allowedHeaders = "")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class CompanyController {
     private final CompanyService companyService;
     private final TokenManager tokenManager;
